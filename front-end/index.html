@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Login</h2>
+                <div id="signUpMessage" class="messageDiv" style="display:none;"> </div>
+                <div class="input-group">
+                    <input type="email" required title="Enter your email" id="signInEmail">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required title="Enter your password" id="signInPassword">
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> Remember</label>
+                </div>
+                <button type="submit" id="submitSignIn">Login</button>
+                <div class="signUp-link">
+                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                <div class="input-group">
+                    <input type="text" required title="Choose a username" id="signUpUsername">
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required title="Enter your email" id="signUpEmail">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required title="Choose a password" id="signUpPassword">
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" id="submitSignUp">Sign Up</button>
+                <div class="signUp-link">
+                    <p>Already have an account? <a href="#" class="signInBtn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js" type="module"></script>
+    <script src="java.js" type="module"></script>
+</body>
+</html>
